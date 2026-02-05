@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact | EduLearn</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(to right, #1e40af, #2563eb);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contact-container {
+            background: #ffffff;
+            width: 420px;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+        }
+
+        .contact-container h1 {
+            text-align: center;
+            color: #1e40af;
+            margin-bottom: 10px;
+        }
+
+        .contact-container p {
+            text-align: center;
+            color: #666;
+            margin-bottom: 25px;
+            font-size: 14px;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            resize: none;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #2563eb;
+            box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+        }
+
+        .send-btn {
+            width: 100%;
+            padding: 12px;
+            background: #1e40af;
+            border: none;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .send-btn:hover {
+            background: #1d4ed8;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .back-home {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .back-home a {
+            color: #777;
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        .back-home a:hover {
+            color: #1e40af;
+        }
+
+        @media (max-width: 450px) {
+            .contact-container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="contact-container">
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you. Send us a message.</p>
+
+    <form>
+        <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="form-group">
+            <label>Your Message</label>
+            <textarea rows="4" placeholder="Type your message here..." required></textarea>
+        </div>
+
+        <button type="submit" class="send-btn">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+        📧 contact@edulearn.com<br>
+        📞 +91 98765 43210
+    </div>
+
+    <div class="back-home">
+        <a href="index.html">← Back to Home</a>
+    </div>
+</div>
+
+</body>
+</html>
