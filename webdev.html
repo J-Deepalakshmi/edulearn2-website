@@ -12,94 +12,199 @@ body{
     margin:0;
     font-family:'Poppins',sans-serif;
     background:#f8fafc;
+    color:#1f2937;
 }
 
-/* HEADER */
-header{
-    background:linear-gradient(135deg,#2563eb,#1e40af);
+/* NAV */
+nav{
+    background:white;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+nav h1{
+    color:#1e40af;
+    margin:0;
+}
+
+nav a{
+    margin-left:20px;
+    text-decoration:none;
+    color:#4b5563;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:#1e40af;
+}
+
+/* HERO */
+.hero{
+    background:linear-gradient(135deg,#1e40af,#2563eb);
     color:white;
-    padding:80px 40px;
+    padding:90px 40px;
     text-align:center;
 }
 
-header h1{
-    font-size:40px;
+.hero h2{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    opacity:0.95;
 }
 
 /* CONTENT */
 .container{
-    max-width:1000px;
+    max-width:1100px;
     margin:auto;
-    padding:60px 30px;
+    padding:70px 40px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:40px;
 }
 
 .section{
     margin-bottom:40px;
 }
 
-.section h2{
+.section h3{
     color:#1e40af;
+    margin-bottom:10px;
 }
 
-ul{
-    padding-left:20px;
+/* SYLLABUS */
+.syllabus{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
 }
 
-.enroll-box{
+.topic{
+    background:white;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.topic:hover{
+    transform:translateY(-8px);
+}
+
+/* SIDEBAR */
+.sidebar{
     background:white;
     padding:30px;
-    border-radius:20px;
+    border-radius:22px;
     box-shadow:0 20px 40px rgba(0,0,0,0.1);
-    text-align:center;
+    position:sticky;
+    top:30px;
 }
 
-.enroll-box a{
-    display:inline-block;
+.sidebar h4{
+    margin-top:0;
+}
+
+.enroll{
+    display:block;
+    text-align:center;
     margin-top:20px;
-    padding:14px 30px;
+    padding:14px;
     background:#2563eb;
     color:white;
     border-radius:30px;
     text-decoration:none;
     font-weight:600;
 }
+.enroll:hover{
+    background:#1e40af;
+}
+
+/* FOOTER */
+footer{
+    background:#0f172a;
+    color:#c7d2fe;
+    text-align:center;
+    padding:25px;
+}
 </style>
 </head>
 
 <body>
 
-<header>
-    <h1>Web Development</h1>
-    <p>Build modern, responsive websites from scratch</p>
-</header>
+<nav>
+    <h1>EduLearn</h1>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <h2>Web Development</h2>
+    <p>Master front-end development and build responsive, modern websites.</p>
+</section>
 
 <div class="container">
 
-    <div class="section">
-        <h2>Course Overview</h2>
-        <p>
-            This course covers front-end web development technologies
-            including HTML, CSS, and JavaScript with hands-on projects.
-        </p>
-    </div>
+    <div class="grid">
 
-    <div class="section">
-        <h2>What You Will Learn</h2>
-        <ul>
-            <li>HTML5 & Semantic Web</li>
-            <li>Modern CSS & Responsive Design</li>
-            <li>JavaScript Fundamentals</li>
-            <li>Project-Based Learning</li>
-        </ul>
-    </div>
+        <!-- MAIN CONTENT -->
+        <div>
+            <div class="section">
+                <h3>Course Overview</h3>
+                <p>
+                    This course provides a strong foundation in web development,
+                    focusing on HTML, CSS, and JavaScript through real-world projects.
+                </p>
+            </div>
 
-    <div class="enroll-box">
-        <h2>Start Learning Today</h2>
-        <p>Enroll now and build your first professional website.</p>
-        <a href="register.html">Enroll Now</a>
+            <div class="section">
+                <h3>What You Will Learn</h3>
+                <div class="syllabus">
+                    <div class="topic">HTML5 & Semantic Structure</div>
+                    <div class="topic">CSS3 & Responsive Design</div>
+                    <div class="topic">JavaScript Basics</div>
+                    <div class="topic">Project Development</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>Who Should Enroll?</h3>
+                <p>
+                    Students, beginners, and anyone interested in building
+                    professional websites.
+                </p>
+            </div>
+        </div>
+
+        <!-- SIDEBAR -->
+        <div class="sidebar">
+            <h4>Course Details</h4>
+            <p><strong>Duration:</strong> 8 Weeks</p>
+            <p><strong>Level:</strong> Beginner to Intermediate</p>
+            <p><strong>Mode:</strong> Online</p>
+            <a href="register.html" class="enroll">Enroll Now</a>
+        </div>
+
     </div>
 
 </div>
+
+<footer>
+    © 2026 EduLearn. All rights reserved.
+</footer>
 
 </body>
 </html>
