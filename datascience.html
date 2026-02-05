@@ -1,9 +1,89 @@
 <!DOCTYPE html>
-<html>
-<head><title>Data Science</title></head>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Data Science | EduLearn</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+body{margin:0;font-family:'Poppins',sans-serif;background:#f8fafc;color:#1f2937;}
+nav{background:white;padding:15px 40px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 5px 20px rgba(0,0,0,0.08);}
+nav h1{color:#1e40af;margin:0;}
+nav a{margin-left:20px;text-decoration:none;color:#4b5563;font-weight:500;}
+nav a:hover{color:#1e40af;}
+.hero{background:linear-gradient(135deg,#0ea5e9,#2563eb);color:white;padding:90px 40px;text-align:center;}
+.hero h2{font-size:42px;margin-bottom:10px;}
+.container{max-width:1100px;margin:auto;padding:70px 40px;}
+.grid{display:grid;grid-template-columns:2fr 1fr;gap:40px;}
+.section{margin-bottom:40px;}
+.section h3{color:#1e40af;}
+.syllabus{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px;}
+.topic{background:white;padding:25px;border-radius:18px;box-shadow:0 15px 35px rgba(0,0,0,0.08);transition:0.3s;}
+.topic:hover{transform:translateY(-8px);}
+.sidebar{background:white;padding:30px;border-radius:22px;box-shadow:0 20px 40px rgba(0,0,0,0.1);position:sticky;top:30px;}
+.enroll{display:block;text-align:center;margin-top:20px;padding:14px;background:#2563eb;color:white;border-radius:30px;text-decoration:none;font-weight:600;}
+.enroll:hover{background:#1e40af;}
+footer{background:#0f172a;color:#c7d2fe;text-align:center;padding:25px;}
+</style>
+</head>
+
 <body>
-<h1>Data Science Course</h1>
-<p>Python, Pandas, Machine Learning.</p>
-<a href="register.html">Register Now</a>
+
+<nav>
+<h1>EduLearn</h1>
+<div>
+<a href="index.html">Home</a>
+<a href="courses.html">Courses</a>
+<a href="contact.html">Contact</a>
+</div>
+</nav>
+
+<section class="hero">
+<h2>Data Science</h2>
+<p>Analyze data, uncover insights, and build intelligent solutions.</p>
+</section>
+
+<div class="container">
+<div class="grid">
+
+<div>
+<div class="section">
+<h3>Course Overview</h3>
+<p>This course covers data analysis, visualization, and machine learning using Python. Learn how to work with real datasets and derive actionable insights.</p>
+</div>
+
+<div class="section">
+<h3>What You Will Learn</h3>
+<div class="syllabus">
+<div class="topic">Python for Data Science</div>
+<div class="topic">Pandas & NumPy</div>
+<div class="topic">Data Visualization</div>
+<div class="topic">Machine Learning Basics</div>
+</div>
+</div>
+
+<div class="section">
+<h3>Who Should Enroll?</h3>
+<p>Students, analysts, and beginners interested in data-driven decision making.</p>
+</div>
+</div>
+
+<div class="sidebar">
+<h4>Course Details</h4>
+<p><strong>Duration:</strong> 10 Weeks</p>
+<p><strong>Level:</strong> Beginner to Intermediate</p>
+<p><strong>Mode:</strong> Online</p>
+<a href="register.html" class="enroll">Enroll Now</a>
+</div>
+
+</div>
+</div>
+
+<footer>
+© 2026 EduLearn. All rights reserved.
+</footer>
+
 </body>
 </html>
