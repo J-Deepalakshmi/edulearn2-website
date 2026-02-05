@@ -6,133 +6,143 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 body{
     margin:0;
-    font-family:'Segoe UI', Arial, sans-serif;
-    background:#f8fafc;
-    color:#1f2937;
+    font-family:'Poppins', sans-serif;
+    background:linear-gradient(to right,#eef2ff,#f8fafc);
 }
 
-header{
+/* NAV */
+nav{
     background:#1e40af;
-    color:white;
-    padding:20px;
+    padding:15px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
+nav h1{
+    color:white;
+    margin:0;
+}
+
+nav a{
+    color:#e0e7ff;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+nav a:hover{
+    color:white;
+}
+
+/* HEADER */
+header{
+    text-align:center;
+    padding:70px 20px;
+    background:linear-gradient(135deg,#2563eb,#1e40af);
+    color:white;
+}
+
+header h2{
+    font-size:38px;
+}
+
+/* COURSES */
 .container{
     max-width:1100px;
     margin:auto;
-    padding:50px 20px;
-}
-
-h2{
-    text-align:center;
-    color:#1e40af;
-    margin-bottom:10px;
-}
-
-.subtitle{
-    text-align:center;
-    color:#6b7280;
-    margin-bottom:40px;
+    padding:60px 20px;
 }
 
 .course-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:25px;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
 }
 
 .course-card{
     background:white;
-    padding:30px;
-    border-radius:14px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.08);
-    transition:0.3s;
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.1);
+    transition:0.4s;
 }
 
 .course-card:hover{
-    transform:translateY(-5px);
+    transform:translateY(-12px);
+    box-shadow:0 30px 60px rgba(37,99,235,0.3);
 }
 
 .course-card h3{
-    margin-top:0;
     color:#1e40af;
+    margin-top:0;
 }
 
 .course-card p{
     color:#4b5563;
-    line-height:1.6;
+    line-height:1.7;
 }
 
 .course-card a{
     display:inline-block;
-    margin-top:15px;
-    text-decoration:none;
-    color:white;
+    margin-top:20px;
+    padding:12px 22px;
     background:#2563eb;
-    padding:10px 16px;
-    border-radius:6px;
+    color:white;
+    border-radius:30px;
+    text-decoration:none;
     font-size:14px;
 }
 
 .course-card a:hover{
-    background:#1d4ed8;
-}
-
-.back{
-    display:block;
-    margin-top:40px;
-    text-align:center;
-    text-decoration:none;
-    color:#2563eb;
-    font-weight:600;
+    background:#1e40af;
 }
 </style>
 </head>
 
 <body>
 
-<header>
+<nav>
     <h1>EduLearn</h1>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+<header>
+    <h2>Explore Our Courses</h2>
+    <p>Designed to build skills that matter</p>
 </header>
 
 <div class="container">
-    <h2>Our Courses</h2>
-    <p class="subtitle">Industry-focused programs designed for career growth</p>
 
     <div class="course-grid">
 
         <div class="course-card">
             <h3>Web Development</h3>
-            <p>
-                Learn HTML, CSS, JavaScript and build responsive, real-world websites
-                and applications from scratch.
-            </p>
-            <a href="webdev.html">View Details</a>
+            <p>Learn HTML, CSS, JavaScript and build responsive, modern websites.</p>
+            <a href="webdev.html">View Course</a>
         </div>
 
         <div class="course-card">
             <h3>Data Science</h3>
-            <p>
-                Master Python, Pandas, data analysis techniques and machine learning
-                fundamentals for data-driven careers.
-            </p>
-            <a href="datascience.html">View Details</a>
+            <p>Master Python, Pandas, visualization and data analysis techniques.</p>
+            <a href="datascience.html">View Course</a>
         </div>
 
         <div class="course-card">
             <h3>AI & Machine Learning</h3>
-            <p>
-                Understand artificial intelligence concepts, ML algorithms, and
-                real-world applications with hands-on examples.
-            </p>
-            <a href="ai.html">View Details</a>
+            <p>Understand AI concepts, ML algorithms and real-world applications.</p>
+            <a href="ai.html">View Course</a>
         </div>
 
     </div>
 
-    <a href="index.html" class="back">← Back to Home</a>
 </div>
 
 </body>
